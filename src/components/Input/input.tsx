@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux'
 import { ADD_TODO } from '../../store/slice/todoSlice'
 import Button from '../Button/button'
 
-const Input = () => {
+export function Input() {
   const dispatch = useDispatch()
   const [todo, setTodo] = useState<string>('')
 

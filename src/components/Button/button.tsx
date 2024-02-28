@@ -8,7 +8,7 @@ type colorVarType = {
   [key: string]: string
 }
 
-const Button = ({ value, handleType, onClick }: ButtonType) => {
+export function Button({ value, handleType, onClick }: ButtonType) {
   const colorVar: colorVarType = {
     add: 'text-blue-800 border',
     delete: 'bg-red-600 text-white',

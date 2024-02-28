@@ -7,7 +7,7 @@ type TodoType = {
   id: string
 }
 
-const Todo = ({ value, id }: TodoType) => {
+export function Todo({ value, id }: TodoType) {
   const dispatch = useDispatch()
 
   function handleDelete() {

@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux'
 import { selectTodos } from '../../store/slice/todoSlice'
 import Todo from '../Todo/todo'
 
-const TodoList = () => {
+export function TodoList() {
   const todos = useSelector(selectTodos)
   const [isNull, setIsNull] = useState<boolean>(false)
 
